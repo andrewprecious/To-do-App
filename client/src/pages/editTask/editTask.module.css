@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.editTask {
+  background-color: rgb(47, 47, 53);
+  color: white;
+}
+
+.editTaskContainer {
+  padding: 30px 0px;
+  width: 40%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* gap: 10px; */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.toBeDone {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.toBeDone h2 {
+  margin-top: 40px;
+}
+
+.createNewTask input {
+  margin-top: 12px;
+  border-bottom: 0.001px solid white;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(47, 47, 53);
+  font-size: 14px;
+  color: rgba(32, 178, 171, 0.658);
+}
+
+.notification {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification p {
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.createNewCat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select {
+  border-bottom: 0.001px solid white;
+  outline: none;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.63);
+  background-color: rgb(47, 47, 53);
+  font-size: 14px;
+}
+
+.options {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.createBtn button {
+  padding: 13px 15px;
+  background-color: rgb(248, 117, 69);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+}
+
+/* responsiveness starts */
+/* ==> 800px */
+@media (max-width: 500px) {
+  .editTaskContainer {
+    width: 80%;
+  }
+}

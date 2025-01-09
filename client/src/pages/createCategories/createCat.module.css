@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.createCat {
+  background-color: rgb(47, 47, 53);
+  color: white;
+}
+
+.createCatContainer {
+  padding: 30px 0px;
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.newCat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.newCat label {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.newCat input {
+  border: 0.001px solid white;
+  outline: none;
+  background-color: rgb(47, 47, 53);
+  color: white;
+  padding: 5px;
+}
+
+.createBtn button {
+  padding: 13px 15px;
+  background-color: rgb(248, 117, 69);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .createCatContainer {
+    width: 80%;
+  }
+}

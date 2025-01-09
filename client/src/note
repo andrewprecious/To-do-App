@@ -1,0 +1,93 @@
+// handling change of category
+// const handleCategoryChange = (e) => {
+//   const { value } = e.target;  Get the value of the selected option
+//   setFormData((prevData) => ({
+//     ...prevData,
+//     category: value, Update the category to the selected value
+//   }));
+// };
+
+// list of available category
+// const categories = ["shopping", "personal", "news"];
+
+// if (formData.category.length === 0) {
+//   setError("Please select at least one category.");
+//   return;
+// }
+
+{
+  /* third div starts */
+}
+//     <div className={`${taskStyles.toBeDone}`}>
+//     <div className={`${taskStyles.createNewTask}`}>
+//       <p>Due date</p>
+//       <input
+
+//         type="date"
+//         name="date"
+//         id="date"
+//         value={formData.date}
+//         onChange={handleChange}
+//         required
+//         placeholder="Date not set.."
+//         className={`${taskStyles.dateSet}`}
+//       />
+//     </div>
+//   </div>
+{
+  /* fourth div starts */
+}
+{
+  /* <div className={`${taskStyles.notification}`}>
+    <a href="#">Notifications</a>
+    <p>No notification if date not set</p>
+  </div> */
+}
+{
+  /* fifth div starts for category */
+}
+{
+  /* <div className={`${taskStyles.createNewCat}`}>
+    <h3>Add to list (category)</h3>
+    <div className={`${taskStyles.options}`}>
+      <select
+        name="cat"
+        id="cat"
+        value={formData.category}
+        onChange={handleCategoryChange}
+      >
+        <option value="">--select category--</option>
+        {categories.map((cat) => (
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
+        ))}
+      </select>
+
+      <div className={`${taskStyles.addCategory}`}>
+        {" "}
+        <button className={`${taskStyles.add}`}>
+          {" "}
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <p className={`${taskStyles.special}`}>Create new category</p>
+      </div>
+    </div>
+  </div> */
+}
+
+// category: {
+//   type: Array,
+// },
+
+// const createCategory = async (req, res) => {
+//   try {
+//     const newCategory = new Category(req.body);
+
+//     const savedCategory = await newCategory.save();
+//     res.status(200).json(savedCategory);
+//   } catch (err) {
+//     console.log(err);
+//     res.status(200).json({ message: "Internal server error" });
+//   }
+// };

@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.allTasks {
+  background-color: rgb(47, 47, 53);
+  color: white;
+}
+
+/* .div {
+  display: flex;
+} */
+
+.allTasksContainer {
+  padding: 30px 0px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.taskdoneGreet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 15px 0px;
+  background-color: rgba(75, 75, 83, 0.822);
+}
+
+.checkBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 2px;
+  text-decoration: underline;
+  font-weight: 200;
+}
+
+.infoDiv button {
+  border: none;
+  background-color: rgb(47, 47, 53);
+  color: white;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.checkBox input {
+  width: 25px;
+}
+
+.checkBox a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.allTodayTasks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.allTodayTasks a {
+  font-size: 15px;
+  color: rgba(248, 117, 69, 0.76);
+  text-decoration: none;
+}
+
+/* responsiveness starts */
+/* ==> 800px */
+/* @media (max-width: 800px) {
+  
+
+  .checkBox .div {
+    margin-left: 30px;
+  }
+} */

@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  background-color: rgb(47, 47, 53);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.userDetails {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.userName p {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.userName a {
+  font-size: 15px;
+  color: rgba(248, 117, 69, 0.76);
+  text-decoration: none;
+}
+
+.userImg {
+  border: 1px solid transparent;
+  border-radius: 46%;
+  height: 46px;
+  background-color: rgba(75, 75, 83, 0.822);
+}
+
+.search input {
+  border: 1px solid transparent;
+  background-color: rgb(75, 75, 83);
+  color: rgba(255, 255, 255, 0.63);
+  border-radius: 18px;
+  padding: 13px 40px;
+  font-size: 14px;
+  outline: none;
+}
+
+.category {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cateName {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.taskCat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.categoryTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(75, 75, 83);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.categoryTask a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.ongoingTask {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  height: 100vh;
+}
+
+.ongoing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.ongoing a {
+  font-size: 15px;
+  color: rgba(248, 117, 69, 0.76);
+  text-decoration: none;
+}
+
+.taskGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ongoingTaskGroup {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(75, 75, 83);
+  padding: 20px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.motivate p {
+  color: lightseagreen;
+}
+
+.time {
+  display: flex;
+  gap: 5px;
+}
+
+.time p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.days {
+  background-color: lightseagreen;
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+.days a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* responsiveness starts */
+/* ==> 800px */
+@media (max-width: 800px) {
+  .userDetails {
+    width: 90%;
+  }
+
+  .category {
+    width: 90%;
+  }
+
+  .ongoingTask {
+    width: 90%;
+  }
+}

@@ -1,0 +1,132 @@
+.navbar {
+  width: 100%;
+  background-color: rgba(62, 62, 73, 0.61);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .logoSmall {
+  display: none;
+}
+
+/* .navbar .logoBig {
+  width: 80px;
+  border-radius: 60%;
+} */
+
+.navLeft {
+  display: flex;
+  gap: 15px;
+}
+
+.navLeft .links {
+  display: flex;
+  gap: 15px;
+}
+
+.navLeft .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.navRight {
+  display: flex;
+  gap: 15px;
+}
+
+.navRight .logout {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  background-color: rgba(62, 62, 73, 0.61);
+  padding: 0px;
+  cursor: pointer;
+}
+
+.navRight a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.hambuger {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.hambuger div {
+  height: 2px;
+  width: 20px;
+  background-color: white;
+}
+
+/* responsiveness starts */
+/* ==> 800px */
+@media (max-width: 800px) {
+  .hambuger {
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navLeft {
+    align-items: flex-end;
+  }
+
+  .navbar .logoSmall {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    width: 100px;
+  }
+
+  .navbar .logoBig {
+    display: none;
+  }
+
+  .navLeft .links,
+  .navRight .links {
+    margin-top: 50px;
+    flex-direction: column;
+    display: none; /* Initially hidden */
+  }
+
+  .navRight {
+    margin-left: 37px;
+    margin-top: 17px;
+  }
+
+  .navRight .logout {
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    background-color: rgb(248, 117, 69);
+    color: white;
+    font-size: 14px;
+  }
+
+  .navRight a {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    background-color: rgb(248, 117, 69);
+    color: white;
+    font-size: 18px;
+  }
+
+  /* Show links when hamburger menu is toggled */
+  .navLeft .showLinks,
+  .navRight .showLinks {
+    display: flex;
+  }
+}
