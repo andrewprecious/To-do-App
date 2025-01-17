@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     tasks: {
-      type: [String],
+      type: [String], //
     },
   },
   { timestamps: true }
